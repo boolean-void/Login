@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      text-align: center;
+      background-image: url('starry-night-sky-dark-aesthetic-ro6a8cda8gg0zoil.jpg'); /* Make sure the path is correct */
+      color: rgb(221, 191, 146);
+      margin: 0;
+      padding: 0;
+    }
+
+    .username {
+      text-align: left;
+      color: rgb(228, 225, 36);
+      font-size: 18px;
+      font-style: inherit;
+      margin-left: 174px;
+      margin-bottom: 20px;
+    }
+
+    .use{
+        margin-bottom: 20px;
+    }
+    
+    .password {
+      text-align: left;
+      color: rgb(228, 225, 36);
+      font-size: 18px;
+      font-style: inherit;
+      margin-left: 174px;
+    }
+
+    .pass{
+        margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      width: 200px;
+      margin-top: 5px;
+    }
+
+    .login{
+      background-color: rgb(191, 164, 32);
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: black;
+      cursor: pointer;
+      margin: 5px;
+      margin-left: 300px;
+    }
+
+    .retry {
+      background-color: rgb(191, 164, 32);
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: black;
+      cursor: pointer;
+      margin: 5px;
+      margin-right: 150px;
+    }
+  </style>
+  <title>Login Page</title>
+</head>
+<body>
+  <h1><b>Login</b></h1>
+
+  <form>
+    <label for="username" class="username"><b>Username</b></label>
+    <input class="use" type="text" name="username" id="username" placeholder="Enter your username">
+
+    <label for="password" class="password"><b>Password</b></label>
+    <input class="pass" type="password" name="password" id="password" placeholder="Enter your Password">
+
+    <button class="login" onclick="log()"><b>Login</b></button>
+    <button class="retry" onclick="re()"><b>Retry</b></button>
+  </form>
+
+  <script>
+    function log(){
+        alert("Logged in successfully!")
+        
+    }
+    function re(){
+        location.reload();
+    }
+  </script>
+</body>
+</html>
